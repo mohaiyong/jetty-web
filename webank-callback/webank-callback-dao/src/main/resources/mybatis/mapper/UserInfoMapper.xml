@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.momo.dao.UserInfoMapper">
+  <!-- 公共 -->
+  <resultMap id="BaseResultMap" type="com.momo.po.UserInfo">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="userid" jdbcType="VARCHAR" property="userid" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="salt" jdbcType="VARCHAR" property="salt" />
+    <result column="trynum" jdbcType="INTEGER" property="trynum" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="mobile" jdbcType="VARCHAR" property="mobile" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="state" jdbcType="CHAR" property="state" />
+    <result column="createtime" jdbcType="TIMESTAMP" property="createtime" />
+    <result column="updatetime" jdbcType="TIMESTAMP" property="updatetime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, userid, username, password, salt, trynum, email, mobile, address, state, createtime, updatetime
+  </sql>
+  <sql id="Base_Where">
+	<trim prefix="where" prefixOverrides="and|or">
+		<if test="record.userid != null">
+			and userid = #{record.userid,jdbcType=VARCHAR}
+		</if>
+		<if test="record.username != null">
+			and username = #{record.username,jdbcType=VARCHAR}
+		</if>
+		<if test="record.password != null">
+			and password = #{record.password,jdbcType=VARCHAR}
+		</if>
+		<if test="record.salt != null">
+			and salt = #{record.salt,jdbcType=VARCHAR}
+		</if>
+		<if test="record.trynum != null">
+			and trynum = #{record.trynum,jdbcType=INTEGER}
+		</if>
+		<if test="record.email != null">
+			and email = #{record.email,jdbcType=VARCHAR}
+		</if>
+		<if test="record.mobile != null">
+			and mobile = #{record.mobile,jdbcType=VARCHAR}
+		</if>
+		<if test="record.address != null">
+			and address = #{record.address,jdbcType=VARCHAR}
+		</if>
+		<if test="record.state != null">
+			and state = #{record.state,jdbcType=CHAR}
+		</if>
+		<if test="record.createtime != null">
+			and createtime = #{record.createtime,jdbcType=TIMESTAMP}
+		</if>
+		<if test="record.updatetime != null">
+			and updatetime = #{record.updatetime,jdbcType=TIMESTAMP}
+		</if>
+	</trim>
+  </sql>
+  
+	<!-- 查询用户 -->
+	<select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+	  select 
+	  <include refid="Base_Column_List" />
+	  from t_user_info
+	  where id = #{id,jdbcType=BIGINT}
+	</select>
+  
+  	<!-- 登录 -->
+	<select id="login" parameterType="com.momo.po.UserInfo" resultMap="BaseResultMap">
+		select
+		<include refid="Base_Column_List" />
+		from t_user_info
+		<trim prefix="where" prefixOverrides="and|or">
+			<if test="record.username != null">
+				and username = #{record.username,jdbcType=VARCHAR}
+			</if>
+			<if test="record.password != null">
+				and password = #{record.password,jdbcType=VARCHAR}
+			</if>
+			<if test="record.email != null">
+				and email = #{record.email,jdbcType=VARCHAR}
+			</if>
+			<if test="record.mobile != null">
+				and mobile = #{record.mobile,jdbcType=VARCHAR}
+			</if>
+		</trim>
+	</select>
+	
+	<!-- 添加客户 -->
+	<insert id="addUser" parameterType="com.momo.po.UserInfo">
+		insert into t_user_info
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="record.userid != null">
+				userid,
+			</if>
+			<if test="record.username != null">
+				username,
+			</if>
+			<if test="record.password != null">
+				password,
+			</if>
+			<if test="record.salt != null">
+				salt,
+			</if>
+			<if test="record.trynum != null">
+				trynum,
+			</if>
+			<if test="record.email != null">
+				email,
+			</if>
+			<if test="record.mobile != null">
+				mobile,
+			</if>
+			<if test="record.state != null">
+				state,
+			</if>
+			createtime,
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="record.userid != null">
+				#{record.userid,jdbcType=VARCHAR},
+			</if>
+			<if test="record.username != null">
+				#{record.username,jdbcType=VARCHAR},
+			</if>
+			<if test="record.password != null">
+				#{record.password,jdbcType=VARCHAR},
+			</if>
+			<if test="record.salt != null">
+				#{record.salt,jdbcType=VARCHAR},
+			</if>
+			<if test="record.trynum != null">
+				#{record.trynum,jdbcType=INTEGER},
+			</if>
+			<if test="record.email != null">
+				#{record.email,jdbcType=VARCHAR},
+			</if>
+			<if test="record.mobile != null">
+				#{record.mobile,jdbcType=VARCHAR},
+			</if>
+			<if test="record.state != null">
+				#{record.state,jdbcType=CHAR},
+			</if>
+			now(),
+		</trim>
+	</insert>
+	
+	<!-- 删除 -->
+	<delete id="deleteUser" parameterType="com.momo.po.UserInfo" >
+		delete from t_user_info
+		<include refid="Base_Where" />
+	</delete>
+	
+	<!-- 修改 -->
+	<update id="updateUser" parameterType="com.momo.po.UserInfo">
+		update t_user_info
+		<set>
+			<if test="record.userid != null">
+				userid = #{record.userid,jdbcType=VARCHAR},
+			</if>
+			<if test="record.username != null">
+				username = #{record.username,jdbcType=VARCHAR},
+			</if>
+			<if test="record.password != null">
+				password = #{record.password,jdbcType=VARCHAR},
+			</if>
+			<if test="record.salt != null">
+				salt = #{record.salt,jdbcType=VARCHAR},
+			</if>
+			<if test="record.trynum != null">
+				trynum = #{record.trynum,jdbcType=VARCHAR},
+			</if>
+			<if test="record.email != null">
+				email = #{record.email,jdbcType=VARCHAR},
+			</if>
+			<if test="record.mobile != null">
+				mobile = #{record.mobile,jdbcType=VARCHAR},
+			</if>
+			<if test="record.state != null">
+				state = #{record.state,jdbcType=CHAR},
+			</if>
+			<if test="record.updatetime != null">
+				updatetime = #{record.updatetime,jdbcType=TIMESTAMP},
+			</if>
+		</set>
+		where 1=1
+		<if test="record.id != null">
+			and id = #{record.id,jdbcType=BIGINT}
+		</if>
+		<if test="record.userid != null">
+			and userid = #{record.userid ,jdbcType=VARCHAR}
+		</if>
+	</update>
+	
+	<!-- 登录 -->
+	<select id="getUser" parameterType="com.momo.po.UserInfo" resultMap="BaseResultMap">
+		select
+		<include refid="Base_Column_List" />
+		from t_user_info
+		<include refid="Base_Where" />
+	</select>
+	
+	<!-- 分页查询 -->
+	<select id="getUserPageList" parameterType="com.momo.po.UserInfo" resultMap="BaseResultMap">
+		select
+		<include refid="Base_Column_List" />
+		from t_user_info
+		<trim prefix="where" prefixOverrides="and|or">
+			<if test="record.userid != null">
+				and userid = #{record.userid,jdbcType=VARCHAR}
+			</if>
+			<if test="record.username != null">
+				and username like CONCAT('%', #{record.username,jdbcType=VARCHAR},'%')
+			</if>
+			<if test="record.password != null">
+				and password = #{record.password,jdbcType=VARCHAR}
+			</if>
+			<if test="record.salt != null">
+				and salt = #{record.salt,jdbcType=VARCHAR}
+			</if>
+			<if test="record.trynum != null">
+				and trynum = #{record.trynum,jdbcType=INTEGER}
+			</if>
+			<if test="record.email != null">
+				and email = #{record.email,jdbcType=VARCHAR}
+			</if>
+			<if test="record.mobile != null">
+				and mobile = #{record.mobile,jdbcType=VARCHAR}
+			</if>
+			<if test="record.address != null">
+				and address = #{record.address,jdbcType=VARCHAR}
+			</if>
+			<if test="record.state != null">
+				and state = #{record.state,jdbcType=CHAR}
+			</if>
+		</trim>
+		<if test="start !=0 or limit!=0">
+			limit #{start},#{limit}
+		</if>
+	</select>
+	
+  
+  
+</mapper>

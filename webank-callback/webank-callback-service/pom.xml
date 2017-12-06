@@ -1,0 +1,69 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.momo</groupId>
+		<artifactId>webank-callback</artifactId>
+		<version>1.0.0</version>
+	</parent>
+	<artifactId>webank-callback-service</artifactId>
+  
+  <properties>
+		<fastjson.version>1.2.5</fastjson.version>
+		<!-- <dubbo.version>2.5.3</dubbo.version> -->
+		<dubbo.version>2.5.4-SNAPSHOT</dubbo.version>
+		<zookeeper.version>3.4.6</zookeeper.version>
+		<!-- <zookeeper.version>3.3.3</zookeeper.version> -->
+  </properties>
+  
+  <dependencies>
+  		<dependency>
+			<groupId>com.momo</groupId>
+			<artifactId>webank-callback-api</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+  		<dependency>
+			<groupId>com.momo</groupId>
+			<artifactId>webank-callback-dao</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		
+		
+		
+		<!-- dubbo配置 -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>dubbo</artifactId>
+			<version>${dubbo.version}</version>
+			<exclusions>  
+				<exclusion>  
+					<artifactId>spring</artifactId>  
+				    <groupId>org.springframework</groupId>  
+				</exclusion>  
+	    	</exclusions> 
+		</dependency>
+		<dependency>
+			<groupId>org.apache.zookeeper</groupId>
+			<artifactId>zookeeper</artifactId>
+			<version>${zookeeper.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.github.sgroschupf</groupId>
+			<artifactId>zkclient</artifactId>
+			<version>0.1</version>
+		</dependency>
+		<!-- Fastjson依赖 -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>${fastjson.version}</version>
+		</dependency>
+
+		
+  </dependencies>
+  
+  
+  <build>
+    <finalName>webank-callback-service</finalName>
+  </build>
+</project>

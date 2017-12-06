@@ -1,0 +1,23 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.momo</groupId>
+	<artifactId>webank-callback</artifactId>
+	<version>1.0.0</version>
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>webank-callback-api</module>
+		<module>webank-callback-web</module>
+		<module>webank-callback-jetty</module>
+		<module>webank-callback-util</module>
+		<module>webank-callback-service</module>
+		<module>webank-callback-dao</module>
+	</modules>
+
+
+	<properties>
+		<spring.version>4.0.2.RELEASE</spring.version>
+	</properties>
+
+</project>

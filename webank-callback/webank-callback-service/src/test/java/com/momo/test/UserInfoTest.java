@@ -34,6 +34,9 @@ public class UserInfoTest extends SpringTestCase {
 		System.out.println(JSON.toJSON(userInfoList));
 	}
 
+	/**
+	 * http://localhost/diamond-server/config.co?dataId=mysql&group=webank_callback
+	 */
 	@Test
 	public void getDiamond() {
 		String data = diamondClient.getConfig("dataSource.url");

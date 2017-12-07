@@ -1,10 +1,10 @@
-Ê¹ÓÃËµÃ÷
+ä½¿ç”¨è¯´æ˜
 
-1.ÏÈÆô¶¯diamondÏîÄ¿
+1.å…ˆå¯åŠ¨diamondé¡¹ç›®
 
-2.ÅäÖÃ¶¯Ì¬ÅäÖÃ£º
-¡¾dataId=mysql  group=webank_callback¡¿
-#Êı¾İ¿âÅäÖÃ
+2.é…ç½®åŠ¨æ€é…ç½®ï¼š
+ã€dataId=mysql  group=webank_callbackã€‘
+#æ•°æ®åº“é…ç½®
 dataSource.driverClassName=com.mysql.jdbc.Driver
 dataSource.url=jdbc:mysql://localhost:3306/webank-callback
 dataSource.username = root
@@ -26,13 +26,13 @@ dataSource.filters = stat
 
 
 
-¡¾dataId=common group=webank_callback¡¿
-#DubboÅäÖÃ
+ã€dataId=common group=webank_callbackã€‘
+#Dubboé…ç½®
 dubbo.app.name=webank-callback-service
 dubbo.app.port=60880
 dubbo.app.address=zookeeper://172.16.1.120:2181?backup=172.16.1.121:2181,172.16.1.122:2181,172.16.1.123:2181
 
-#·¢ËÍÓÊ¼ş
+#å‘é€é‚®ä»¶
 mail.host=smtp.exmail.qq.com
 mail.port=25
 mail.username=admin@dtds.com.cn

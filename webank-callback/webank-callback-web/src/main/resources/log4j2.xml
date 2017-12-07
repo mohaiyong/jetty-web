@@ -2,8 +2,8 @@
 <configuration status="OFF">
 	<!-- 1.日志配置 -->
 	<Properties>
-		<Property name="log.base">${logback.output.path}</Property>
-		<Property name="sys.name">${config.app.name}</Property>
+		<Property name="log.base">logs</Property>
+		<Property name="sys.name">callback-web</Property>
 		<Property name="max.size">100MB</Property><!-- 文件到100M自动压缩 -->
 	</Properties>
 	
@@ -12,7 +12,7 @@
 		<Console name="Console" target="SYSTEM_OUT">
 			<!--控制台只输出level及以上级别的信息（onMatch），其他的直接拒绝（onMismatch） -->
 			<ThresholdFilter level="trace" onMatch="ACCEPT" onMismatch="DENY" />
-			<PatternLayout pattern="%date{yyyy-MM-dd HH:mm:ss.SSS}|%-5level|cls-provider|%X{support}|%X{lsf.requestNo}|NA|NA|NA|%thread|%X{consumerIp}|%logger{36}.%method\(\):%L|%msg%n" />
+			<PatternLayout pattern="%date{yyyy-MM-dd HH:mm:ss.SSS}|%-5level|webank-callback-web|%X{support}|%X{lsf.requestNo}|NA|NA|NA|%thread|%X{consumerIp}|%logger{36}.%method\(\):%L|%msg%n" />
 		</Console>
 		<!--这个会打印出所有的信息，每次大小超过size，则这size大小的日志会自动存入按年份-月份建立的文件夹下面并进行压缩，作为存档 -->
 		<RollingFile name="file.info" fileName="${log.base}/${sys.name}_info.log" filePattern="${log.base}/${sys.name}_info_%d{MM-dd-yyyy}.%i.log.zip">
@@ -21,7 +21,7 @@
 				<SizeBasedTriggeringPolicy size="${max.size}" />
 			</Policies>
 			<ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY"/>
-			<PatternLayout pattern="%date{yyyy-MM-dd HH:mm:ss.SSS}|%-5level|cls-provider|%X{support}|%X{lsf.requestNo}|NA|NA|NA|%thread|%X{consumerIp}|%logger{36}.%method\(\):%L|%msg%n" />
+			<PatternLayout pattern="%date{yyyy-MM-dd HH:mm:ss.SSS}|%-5level|webank-callback-web|%X{support}|%X{lsf.requestNo}|NA|NA|NA|%thread|%X{consumerIp}|%logger{36}.%method\(\):%L|%msg%n" />
 		</RollingFile>
 
 		<RollingFile name="file.error" fileName="${log.base}/${sys.name}_error.log" filePattern="${log.base}/${sys.name}_error_%d{MM-dd-yyyy}.%i.log.zip">
@@ -30,7 +30,7 @@
 				<SizeBasedTriggeringPolicy size="${max.size}" />
 			</Policies>
 		    <ThresholdFilter level="error" onMatch="ACCEPT" onMismatch="DENY"/>
-			<PatternLayout pattern="%date{yyyy-MM-dd HH:mm:ss.SSS}|%-5level|cls-provider|%X{support}|%X{lsf.requestNo}|NA|NA|NA|%thread|%X{consumerIp}|%logger{36}.%method\(\):%L|%msg%n" />
+			<PatternLayout pattern="%date{yyyy-MM-dd HH:mm:ss.SSS}|%-5level|webank-callback-web|%X{support}|%X{lsf.requestNo}|NA|NA|NA|%thread|%X{consumerIp}|%logger{36}.%method\(\):%L|%msg%n" />
 		</RollingFile>
 		
 		<RollingFile name="file.debug" fileName="${log.base}/${sys.name}_debug.log" filePattern="${log.base}/${sys.name}_debug_%d{MM-dd-yyyy}.%i.log.zip">
@@ -42,7 +42,7 @@
 				<ThresholdFilter level="info" onMatch="DENY" onMismatch="NEUTRAL"/>
 		    	<ThresholdFilter level="debug" onMatch="ACCEPT" onMismatch="DENY"/>
 		    </Filters>	
-			<PatternLayout pattern="%date{yyyy-MM-dd HH:mm:ss.SSS}|%-5level|cls-provider|%X{support}|%X{lsf.requestNo}|NA|NA|NA|%thread|%X{consumerIp}|%logger{36}.%method\(\):%L|%msg%n" />
+			<PatternLayout pattern="%date{yyyy-MM-dd HH:mm:ss.SSS}|%-5level|webank-callback-web|%X{support}|%X{lsf.requestNo}|NA|NA|NA|%thread|%X{consumerIp}|%logger{36}.%method\(\):%L|%msg%n" />
 		</RollingFile>		
 	</Appenders>
 

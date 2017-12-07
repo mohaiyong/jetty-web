@@ -2,7 +2,8 @@ package com.momo.service.api;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import javax.annotation.Resource;
+
 import org.springframework.stereotype.Service;
 
 import com.momo.api.PayService;
@@ -19,7 +20,7 @@ import com.momo.service.UserInfoService;
 @Service("payServiceImpl")
 public class PayServiceImpl implements PayService {
 
-	@Autowired
+	@Resource
 	private UserInfoService userInfoService;
 
 	@Override

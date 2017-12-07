@@ -12,7 +12,8 @@
 	<aop:aspectj-autoproxy proxy-target-class="true" />
 
 	<!-- 配置扫描的包 -->
-	<context:component-scan base-package="com.momo.*" />
+	<context:component-scan base-package="com.momo.controller" />
+	<context:component-scan base-package="com.momo.filter" />
 	
 	<!-- 导入文件 -->
 	<import resource="classpath*:applicationContext-service.xml" />

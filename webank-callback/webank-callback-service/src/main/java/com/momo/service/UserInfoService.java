@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import com.momo.dao.UserInfoMapper;
 import com.momo.po.UserInfo;
 
-@Service("userInfoService")
+@Service
 public class UserInfoService {
 
 	@Autowired

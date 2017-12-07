@@ -9,6 +9,8 @@
 	<artifactId>webank-callback-util</artifactId>
   
   <dependencies>
+
+  
     	<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
@@ -43,6 +45,49 @@
 		    <artifactId>slf4j-log4j12</artifactId>  
 		    <version>1.7.2</version>  
 		</dependency> 
+		
+		<!-- 淘宝网Diamond分布式动态配置 -->
+		<!-- <dependency>
+		  <groupId>com.gome</groupId>
+		  <artifactId>gome-common-spring</artifactId>
+		  <version>1.0.0</version>
+		</dependency>
+		<dependency>
+		  <groupId>com.taobao.diamond</groupId>
+		  <artifactId>diamond-client</artifactId>
+		  <version>2.0.5.4.taocode-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+		  <groupId>com.taobao.diamond</groupId>
+		  <artifactId>diamond-utils</artifactId>
+		  <version>2.0.5.4.taocode-SNAPSHOT</version>
+		</dependency> -->
+		<dependency>
+			<groupId>com.zhc</groupId>
+			<artifactId>diamond-utils</artifactId>
+			<version>2.0.5.4</version>
+		</dependency>
+		<dependency>
+			<groupId>com.zhc</groupId>
+			<artifactId>diamond-client</artifactId>
+			<version>2.0.5.4</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-httpclient</groupId>
+			<artifactId>commons-httpclient</artifactId>
+			<version>3.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.caucho</groupId>
+			<artifactId>hessian</artifactId>
+			<version>3.1.5</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.6</version>
+		</dependency>
 		
   </dependencies>
   

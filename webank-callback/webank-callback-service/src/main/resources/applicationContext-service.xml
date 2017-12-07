@@ -12,6 +12,12 @@
 	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.2.xsd
 	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
 
+	<!-- 加载动态配置 -->
+	<bean id="diamondClient" class="com.momo.diamond.DiamondClient" init-method="init"/>
+	
+	<!-- 配置扫描的包 -->
+	<context:component-scan base-package="com.momo.service" />
+
 	<task:annotation-driven />
 	<tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="true" />
 
@@ -25,6 +31,5 @@
 	<import resource="classpath*:/spring/applicationContext-transaction.xml" />
 	<import resource="classpath*:/spring/applicationContext-email.xml" />
 	<import resource="classpath*:/spring/applicationContext-dubbo-*.xml" />
-	
 	
 </beans>

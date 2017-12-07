@@ -60,7 +60,7 @@ public class JettyServer {
 	 * 使用默认的log4.properties配置
 	 */
 	protected static void useDefaultLog4jProperties() {
-		Resource resource = new ClassPathResource("log4j.properties");
+		Resource resource = new ClassPathResource("log4j2.xml");
 		boolean hasLog4jProperties = (resource != null && resource.exists());
 		if (!hasLog4jProperties) {
 			loadLog4j();

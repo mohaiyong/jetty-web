@@ -1,0 +1,19 @@
+# ˝æ›ø‚≈‰÷√
+dataSource.driverClassName=com.mysql.jdbc.Driver
+dataSource.url=jdbc:mysql://localhost:3306/webank-callback
+dataSource.username = root
+dataSource.password = 123456
+dataSource.initialSize  =  2
+dataSource.maxActive = 30
+dataSource.maxIdle = 2
+dataSource.minIdle = 2
+dataSource.maxOpenPreparedStatements = 150
+dataSource.validationQuery = SELECT 1 FROM DUAL
+dataSource.testWhileIdle = true
+dataSource.testOnBorrow = false
+dataSource.testOnReturn = false
+dataSource.timeBetweenEvictionRunsMillis = 60000
+dataSource.minEvictableIdleTimeMillis = 300000
+dataSource.poolPreparedStatements = true
+dataSource.maxPoolPreparedStatementPerConnectionSize = 20
+dataSource.filters = stat

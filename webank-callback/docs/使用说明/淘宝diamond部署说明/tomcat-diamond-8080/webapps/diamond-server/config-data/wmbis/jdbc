@@ -1,0 +1,9 @@
+jdbc.url=jdbc:mysql://localhost:3306/bis?useUnicodetrue&characterEncodingutf8
+jdbc.username=root
+jdbc.password=123456
+dbcp.maxActive=100
+dbcp.minIdle=10
+dbcp.maxWait=60000
+minEvictableIdleTimeMillis=60000
+timeBetweenEvictionRunsMillis=300000
+jdbc.driver=com.mysql.jdbc.Driver

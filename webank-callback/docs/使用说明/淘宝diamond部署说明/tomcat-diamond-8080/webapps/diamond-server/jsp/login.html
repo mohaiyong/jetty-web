@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>登录</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+	<meta name="renderer" content="webkit">
+	<link href="/diamond-server/static/css/login.css" rel='stylesheet' type='text/css' />
+	
+</head>
+<body>
+<div id="container">
+	<div id="header">
+		<img src="/diamond-server/static/images/logo.png">
+	</div>
+	<!-----start-main---->
+	<div id="main">
+		<div class="main-content">
+			<div class="login-form">
+				<form id="login-form" >
+					<div class="input-group">
+						<label class="i-user" for="loginName"></label>
+						<input id="loginName" name="username" type="text" placeholder="用户名" >
+					</div>
+					<div class="input-group">
+						<label class="i-password" for="passWord"></label>
+						<input id="passWord" name="password" type="password" placeholder="密码">
+					</div>
+					<!-- <div class="input-group">
+						<label class="i-code" for="verifiedCode"></label>
+						<input id="verifiedCode" name="verifiedCode" type="text" placeholder="验证码" style="width: 90px;" maxlength="4"/><img alt="验证码" src="code.do" id="verified" style="border-radius: 5px;border:1px solid #DED6D6;outline: none;-webkit-appearance:none;height: 26px;width: 100px;margin-left: 10px;cursor: pointer;" onclick="return reloadImage();">
+					</div> -->
+					<div class="error-text">
+						
+					</div>
+					<div class="submit">
+						<input  type="submit" value="登录">
+					</div>
+					<!--
+					<div>
+						<a href="views/supplierRegister/register.html" target="_blank" class="a-bottom" >供应商入驻 </a>
+						<a href="forgetPassword.html" target="_blank" class="b-bottom">忘记密码</a>
+					</div>
+					  -->
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="footer">
+	Copyright © 2014-2015 All Rights Reserved 深圳智慧城电子商务有限公司 版权所有
+</div>
+	<script data-main="/diamond-server/static/js/common/login.js" src="/diamond-server/static/js/lib/require/require.js"></script>
+
+</body>
+</html>

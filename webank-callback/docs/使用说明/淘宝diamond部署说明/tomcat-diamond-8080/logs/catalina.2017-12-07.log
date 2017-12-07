@@ -1,0 +1,114 @@
+十二月 07, 2017 6:30:19 下午 org.apache.catalina.core.AprLifecycleListener init
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: D:\Program Files\Java\jdk1.7.0_79\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Program Files\Java\jdk1.7.0_79\\bin;D:\Program Files\TortoiseSVN\bin;D:\Program Files\GitExtensions\;D:\MavenHome\apache-maven-3.0.5\bin;D:\nexus\nexus-2.11.1-01\bin;D:\Program Files\nodejs\;D:\Program Files\Microsoft VS Code\bin;C:\Users\Administrator\AppData\Roaming\npm;.
+十二月 07, 2017 6:30:19 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-8080"]
+十二月 07, 2017 6:30:19 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8009"]
+十二月 07, 2017 6:30:19 下午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 375 ms
+十二月 07, 2017 6:30:19 下午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+十二月 07, 2017 6:30:19 下午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.19
+十二月 07, 2017 6:30:19 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory diamond-server
+十二月 07, 2017 6:30:23 下午 org.apache.catalina.startup.TaglibUriRule body
+信息: TLD skipped. URI: http://java.sun.com/jstl/core_rt is already defined
+十二月 07, 2017 6:30:23 下午 org.apache.catalina.startup.TaglibUriRule body
+信息: TLD skipped. URI: http://java.sun.com/jstl/core is already defined
+十二月 07, 2017 6:30:23 下午 org.apache.catalina.startup.TaglibUriRule body
+信息: TLD skipped. URI: http://java.sun.com/jsp/jstl/core is already defined
+十二月 07, 2017 6:30:23 下午 org.apache.catalina.startup.TaglibUriRule body
+信息: TLD skipped. URI: http://java.sun.com/jstl/fmt_rt is already defined
+十二月 07, 2017 6:30:23 下午 org.apache.catalina.startup.TaglibUriRule body
+信息: TLD skipped. URI: http://java.sun.com/jstl/fmt is already defined
+十二月 07, 2017 6:30:23 下午 org.apache.catalina.startup.TaglibUriRule body
+信息: TLD skipped. URI: http://java.sun.com/jsp/jstl/fmt is already defined
+十二月 07, 2017 6:30:23 下午 org.apache.catalina.startup.TaglibUriRule body
+信息: TLD skipped. URI: http://java.sun.com/jsp/jstl/functions is already defined
+十二月 07, 2017 6:30:23 下午 org.apache.catalina.startup.TaglibUriRule body
+信息: TLD skipped. URI: http://jakarta.apache.org/taglibs/standard/permittedTaglibs is already defined
+十二月 07, 2017 6:30:23 下午 org.apache.catalina.startup.TaglibUriRule body
+信息: TLD skipped. URI: http://jakarta.apache.org/taglibs/standard/scriptfree is already defined
+十二月 07, 2017 6:30:23 下午 org.apache.catalina.startup.TaglibUriRule body
+信息: TLD skipped. URI: http://java.sun.com/jstl/sql_rt is already defined
+十二月 07, 2017 6:30:23 下午 org.apache.catalina.startup.TaglibUriRule body
+信息: TLD skipped. URI: http://java.sun.com/jstl/sql is already defined
+十二月 07, 2017 6:30:23 下午 org.apache.catalina.startup.TaglibUriRule body
+信息: TLD skipped. URI: http://java.sun.com/jsp/jstl/sql is already defined
+十二月 07, 2017 6:30:23 下午 org.apache.catalina.startup.TaglibUriRule body
+信息: TLD skipped. URI: http://java.sun.com/jstl/xml_rt is already defined
+十二月 07, 2017 6:30:23 下午 org.apache.catalina.startup.TaglibUriRule body
+信息: TLD skipped. URI: http://java.sun.com/jstl/xml is already defined
+十二月 07, 2017 6:30:23 下午 org.apache.catalina.startup.TaglibUriRule body
+信息: TLD skipped. URI: http://java.sun.com/jsp/jstl/xml is already defined
+十二月 07, 2017 6:30:23 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-8080"]
+十二月 07, 2017 6:30:23 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8009"]
+十二月 07, 2017 6:30:23 下午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 4097 ms
+十二月 07, 2017 6:31:09 下午 org.apache.catalina.core.AprLifecycleListener init
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: D:\Program Files\Java\jdk1.7.0_79\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Program Files\Java\jdk1.7.0_79\\bin;D:\Program Files\TortoiseSVN\bin;D:\Program Files\GitExtensions\;D:\MavenHome\apache-maven-3.0.5\bin;D:\nexus\nexus-2.11.1-01\bin;D:\Program Files\nodejs\;D:\Program Files\Microsoft VS Code\bin;C:\Users\Administrator\AppData\Roaming\npm;.
+十二月 07, 2017 6:31:10 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-8080"]
+十二月 07, 2017 6:31:10 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8009"]
+十二月 07, 2017 6:31:10 下午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 375 ms
+十二月 07, 2017 6:31:10 下午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+十二月 07, 2017 6:31:10 下午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.19
+十二月 07, 2017 6:31:10 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory diamond-server
+十二月 07, 2017 6:31:15 下午 org.apache.catalina.core.AprLifecycleListener init
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: D:\Program Files\Java\jdk1.7.0_79\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Program Files\Java\jdk1.7.0_79\\bin;D:\Program Files\TortoiseSVN\bin;D:\Program Files\GitExtensions\;D:\MavenHome\apache-maven-3.0.5\bin;D:\nexus\nexus-2.11.1-01\bin;D:\Program Files\nodejs\;D:\Program Files\Microsoft VS Code\bin;C:\Users\Administrator\AppData\Roaming\npm;.
+十二月 07, 2017 6:31:16 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-8080"]
+十二月 07, 2017 6:31:16 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8009"]
+十二月 07, 2017 6:31:16 下午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 375 ms
+十二月 07, 2017 6:31:16 下午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+十二月 07, 2017 6:31:16 下午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.19
+十二月 07, 2017 6:31:16 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory diamond-server
+十二月 07, 2017 6:31:19 下午 org.apache.catalina.startup.TaglibUriRule body
+信息: TLD skipped. URI: http://java.sun.com/jstl/core_rt is already defined
+十二月 07, 2017 6:31:19 下午 org.apache.catalina.startup.TaglibUriRule body
+信息: TLD skipped. URI: http://java.sun.com/jstl/core is already defined
+十二月 07, 2017 6:31:19 下午 org.apache.catalina.startup.TaglibUriRule body
+信息: TLD skipped. URI: http://java.sun.com/jsp/jstl/core is already defined
+十二月 07, 2017 6:31:19 下午 org.apache.catalina.startup.TaglibUriRule body
+信息: TLD skipped. URI: http://java.sun.com/jstl/fmt_rt is already defined
+十二月 07, 2017 6:31:19 下午 org.apache.catalina.startup.TaglibUriRule body
+信息: TLD skipped. URI: http://java.sun.com/jstl/fmt is already defined
+十二月 07, 2017 6:31:19 下午 org.apache.catalina.startup.TaglibUriRule body
+信息: TLD skipped. URI: http://java.sun.com/jsp/jstl/fmt is already defined
+十二月 07, 2017 6:31:19 下午 org.apache.catalina.startup.TaglibUriRule body
+信息: TLD skipped. URI: http://java.sun.com/jsp/jstl/functions is already defined
+十二月 07, 2017 6:31:19 下午 org.apache.catalina.startup.TaglibUriRule body
+信息: TLD skipped. URI: http://jakarta.apache.org/taglibs/standard/permittedTaglibs is already defined
+十二月 07, 2017 6:31:19 下午 org.apache.catalina.startup.TaglibUriRule body
+信息: TLD skipped. URI: http://jakarta.apache.org/taglibs/standard/scriptfree is already defined
+十二月 07, 2017 6:31:19 下午 org.apache.catalina.startup.TaglibUriRule body
+信息: TLD skipped. URI: http://java.sun.com/jstl/sql_rt is already defined
+十二月 07, 2017 6:31:19 下午 org.apache.catalina.startup.TaglibUriRule body
+信息: TLD skipped. URI: http://java.sun.com/jstl/sql is already defined
+十二月 07, 2017 6:31:19 下午 org.apache.catalina.startup.TaglibUriRule body
+信息: TLD skipped. URI: http://java.sun.com/jsp/jstl/sql is already defined
+十二月 07, 2017 6:31:19 下午 org.apache.catalina.startup.TaglibUriRule body
+信息: TLD skipped. URI: http://java.sun.com/jstl/xml_rt is already defined
+十二月 07, 2017 6:31:19 下午 org.apache.catalina.startup.TaglibUriRule body
+信息: TLD skipped. URI: http://java.sun.com/jstl/xml is already defined
+十二月 07, 2017 6:31:19 下午 org.apache.catalina.startup.TaglibUriRule body
+信息: TLD skipped. URI: http://java.sun.com/jsp/jstl/xml is already defined
+十二月 07, 2017 6:31:20 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-8080"]
+十二月 07, 2017 6:31:20 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8009"]
+十二月 07, 2017 6:31:20 下午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 4085 ms

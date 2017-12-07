@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>系统信息管理</title>
+<!-- 		<link rel="stylesheet" type="text/css" href="../../static/css/easyui.css" > -->
+		<link rel="stylesheet" type="text/css" href="../../static/js/lib/easyui/themes/icon.css" >
+		<link rel="stylesheet" type="text/css" href="../../static/js/lib/easyui/themes/tsh/easyui.css" >
+		<link rel="stylesheet" type="text/css" href="../../static/js/lib/easyui/themes/tsh/bootstrap.min.css" >
+		<link rel="stylesheet" type="text/css" href="../../static/js/lib/easyui/themes/tsh/tsh-main.css" >
+		<link rel="stylesheet" type="text/css" href="../../static/js/lib/easyui/themes/tsh/tsh-common.css" >
+		<script type="text/javascript" src="../../static/js/lib/jquery/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="../../static/js/lib/easyui/jquery.easyui.min.js"></script>
+		<script type="text/javascript" src="../../static/js/lib/easyui/locale/easyui-lang-zh_CN.js"></script>
+		<script type="text/javascript" src="../../static/js/lib/easyui/style.js"></script>
+		<script type="text/javascript" src="../../static/js/lib/easyui/easyuiExt.js"></script>
+		<script src="../../static/js/plugin/acceptParam/acceptParam.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../static/js/system/area_menu_list.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.datagrid-header-row{
+				height: 35px;
+			}
+			.div_span {
+				padding-left:40px;
+			}
+			.form-group{margin-bottom:15px;clear:left;display:block;}
+			.form-group label{float:left;padding:0 10px;line-height: 34px;}
+			.form-group input.form-control{max-width: 200px;float: left;}
+			.form-group input.value{max-width:300px;}
+			.addGroupItem{text-align:center;}
+			#user-dialog{padding:10px 10px;}
+			.form-group-content{height: 300px;width:620px;overflow-y:auto;margin-bottom: 10px;}
+			.form-group input.radio{max-width:24px;max-height:24px;cursor:pointer;}
+			
+			
+			#system-list-content{width:300px;height:100%;border-right:1px solid #D4D4D4;float:left;}
+			#system-menu-list-content{float:left;width:80%;height:100%;}
+			#system-list-content p{width:100%;line-height:24px;cursor: pointer;padding:5px 10px;margin:0px;}
+			#system-list-content p.selected{background-color:red;}
+		</style>
+	</head>
+	<body>
+		<table id="dataGrid"></table>
+		<div id="tb" style="padding: 2px 5px;">
+		<form name="form" id="form">
+			<div style="margin-top: 10px; margin-bottom: 10px;">
+				<span class="div_span">选择系统：</span>
+				<select id="systemSelect" class="easyui-combobox" panelHeight="auto"
+					style="width: 300px; height: 30px" >
+				</select>
+				<a href="#" class="easyui-linkbutton btn-red" iconCls="icon-add" id="addSystem">添加县域一级菜单</a>
+			</div>
+			</form>
+		</div>
+	</body>
+
+</html>
+<script type='text/html' id='system-dialog-template'>
+<div id='system-dialog'>
+<div class="form-group">
+	<label for='group'>所属系统:</label>
+	<input class="form-control value" id='sysName-dialog'  readOnly='true' type="text"  >
+</div>
+<div class="form-group">
+	<label for='group'>菜单名称:</label>
+	<input class="form-control value" id='menuName' name='menuName' maxlength="10" type="text" placeholder="菜单名称（10个字符长度）" >
+</div>
+<div class="form-group">
+	<label for='group'>菜单地址:</label>
+	<input class="form-control value" id='menuPath' name='menuPath' maxlength="256" type="text" placeholder="菜单地址（256个字符长度）" >
+</div>
+<div class="form-group">
+	<label for='group'>打开方式:</label>
+	<input class="form-control radio" type='radio' name='openType' checked='checked' id='openType-self' value='_self' /><label for='status-self'>默认</label><label></label><label></label><input type='radio' class="form-control radio" name='openType' value='_blank' id='openType-blank' /><label for='openType-blank'>新页面</label>
+</div>
+<div class="form-group" id="menuStatus-content">
+	<label>菜单状态:</label>
+	<input class="form-control radio" type='radio' name='menuStatus' checked='checked' id='status-open' value='1' /><label for='status-open'>开启</label><label></label><label></label><input type='radio' class="form-control radio" name='menuStatus' value='0' id='status-close' /><label for='status-close'>关闭</label>
+</div>
+</div>
+</script>
+<script type='text/html' id='system-menu-dialog-template'>
+<div id='system-dialog'>
+<div class="form-group">
+	<label for='group'>所属系统:</label>
+	<input class="form-control value" id='sysName-dialog'  readOnly='true' type="text"  >
+</div>
+<div class="form-group">
+	<label for='group'>上级菜单:</label>
+	<input class="form-control value" id='pMenuName' name='pMenuName' readOnly='true'  type="text" >
+</div>
+<div class="form-group">
+	<label for='group'>菜单名称:</label>
+	<input class="form-control value" id='menuName' name='menuName' maxlength="10" type="text" placeholder="菜单名称（10个字符长度）" >
+</div>
+<div class="form-group">
+	<label for='group'>菜单地址:</label>
+	<input class="form-control value" id='menuPath' name='menuPath' maxlength="256" type="text" placeholder="菜单地址（256个字符长度）" >
+</div>
+<div class="form-group">
+	<label for='group'>打开方式:</label>
+	<input class="form-control radio" type='radio' name='openType' checked='checked' id='openType-self' value='_self' /><label for='status-self'>默认</label><label></label><label></label><input type='radio' class="form-control radio" name='openType' value='_blank' id='openType-blank' /><label for='openType-blank'>新页面</label>
+</div>
+<div class="form-group" id="menuStatus-content">
+	<label>菜单状态:</label>
+	<input class="form-control radio" type='radio' checked='checked' name='menuStatus' id='status-open' value='1' /><label for='status-open'>开启</label><label></label><label></label><input type='radio' class="form-control radio" name='menuStatus' value='0' id='status-close' /><label for='status-close'>关闭</label>
+</div>
+</div>
+</script>
+<script type='text/html' id='system-function-dialog-template'>
+<div id='system-dialog'>
+<div class="form-group">
+	<label for='group'>所属系统:</label>
+	<input class="form-control value" id='sysName-dialog'  readOnly='true' type="text"  >
+</div>
+<div class="form-group">
+	<label for='group'>上级菜单:</label>
+	<input class="form-control value" id='pMenuName' name='pMenuName' readOnly='true'  type="text" >
+</div>
+<div class="form-group">
+	<label for='group'>功能名称:</label>
+	<input class="form-control value" id='menuName' name='menuName' maxlength="10" type="text" placeholder="菜单名称（10个字符长度）" >
+</div>
+<div class="form-group">
+	<label for='group'>功能地址:</label>
+	<input class="form-control value" id='menuPath' name='menuPath' maxlength="256" readonly = 'readonly' value='#'  type="text" placeholder="菜单地址（256个字符长度）" >
+</div>
+<div class="form-group">
+	<label for='group'>功能编码:</label>
+	<input class="form-control value" id='funCode' name='funCode' maxlength="32" type="text" placeholder="功能编码（32个字符长度）" >
+</div>
+<div class="form-group">
+	<label for='group'>打开方式:</label>
+	<input class="form-control radio" type='radio' name='openType' checked='checked' id='openType-self' value='_self' /><label for='status-self'>默认</label><label></label><label></label><input type='radio' class="form-control radio" name='openType' value='_blank' id='openType-blank' /><label for='openType-blank'>新页面</label>
+</div>
+<div class="form-group" id="menuStatus-content">
+	<label>菜单状态:</label>
+	<input class="form-control radio" type='radio' checked='checked' name='menuStatus' id='status-open' value='1' /><label for='status-open'>开启</label><label></label><label></label><input type='radio' class="form-control radio" name='menuStatus' value='0' id='status-close' /><label for='status-close'>关闭</label>
+</div>
+</div>
+</script>

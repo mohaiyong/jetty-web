@@ -1,0 +1,321 @@
+2017-12-07 17:14:04 org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:285)Root WebApplicationContext: initialization started
+2017-12-07 17:14:04 org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)Refreshing Root WebApplicationContext: startup date [Thu Dec 07 17:14:04 CST 2017]; root of context hierarchy
+2017-12-07 17:14:04 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-07 17:14:04 com.taobao.diamond.server.service.NotifyService.loadNodes(NotifyService.java:66)节点列表:{}
+2017-12-07 17:14:05 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/views/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2017-12-07 17:14:05 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2017-12-07 17:14:05 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/admin.do] onto handler 'adminController'
+2017-12-07 17:14:05 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/login.do] onto handler 'loginController'
+2017-12-07 17:14:05 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/notify.do] onto handler 'notifyController'
+2017-12-07 17:14:05 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/tshAdmin.do] onto handler 'tshAdminController'
+2017-12-07 17:14:05 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/tshNotify.do] onto handler 'tshNotifyController'
+2017-12-07 17:14:05 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/tshUser.do] onto handler 'tshUserController'
+2017-12-07 17:14:05 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/system.do] onto handler 'systemController'
+2017-12-07 17:14:05 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/systemMenu.do] onto handler 'systemMenuController'
+2017-12-07 17:14:05 org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325)Root WebApplicationContext: initialization completed in 1258 ms
+2017-12-07 17:14:05 org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:485)FrameworkServlet 'diamond': initialization started
+2017-12-07 17:14:05 org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)Refreshing WebApplicationContext for namespace 'diamond-servlet': startup date [Thu Dec 07 17:14:05 CST 2017]; parent: Root WebApplicationContext
+2017-12-07 17:14:05 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)Loading XML bean definitions from ServletContext resource [/WEB-INF/diamond-servlet.xml]
+2017-12-07 17:14:05 org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:504)FrameworkServlet 'diamond': initialization completed in 20 ms
+2017-12-07 17:26:15 org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:285)Root WebApplicationContext: initialization started
+2017-12-07 17:26:15 org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)Refreshing Root WebApplicationContext: startup date [Thu Dec 07 17:26:15 CST 2017]; root of context hierarchy
+2017-12-07 17:26:15 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-07 17:26:15 com.taobao.diamond.server.service.NotifyService.loadNodes(NotifyService.java:66)节点列表:{}
+2017-12-07 17:26:15 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/views/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2017-12-07 17:26:15 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2017-12-07 17:26:15 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/admin.do] onto handler 'adminController'
+2017-12-07 17:26:15 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/login.do] onto handler 'loginController'
+2017-12-07 17:26:15 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/notify.do] onto handler 'notifyController'
+2017-12-07 17:26:15 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/tshAdmin.do] onto handler 'tshAdminController'
+2017-12-07 17:26:15 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/tshNotify.do] onto handler 'tshNotifyController'
+2017-12-07 17:26:15 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/tshUser.do] onto handler 'tshUserController'
+2017-12-07 17:26:15 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/system.do] onto handler 'systemController'
+2017-12-07 17:26:15 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/systemMenu.do] onto handler 'systemMenuController'
+2017-12-07 17:26:16 org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325)Root WebApplicationContext: initialization completed in 708 ms
+2017-12-07 17:26:16 org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:485)FrameworkServlet 'diamond': initialization started
+2017-12-07 17:26:16 org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)Refreshing WebApplicationContext for namespace 'diamond-servlet': startup date [Thu Dec 07 17:26:16 CST 2017]; parent: Root WebApplicationContext
+2017-12-07 17:26:16 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)Loading XML bean definitions from ServletContext resource [/WEB-INF/diamond-servlet.xml]
+2017-12-07 17:26:16 org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:504)FrameworkServlet 'diamond': initialization completed in 20 ms
+2017-12-07 17:35:00 org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:285)Root WebApplicationContext: initialization started
+2017-12-07 17:35:00 org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)Refreshing Root WebApplicationContext: startup date [Thu Dec 07 17:35:00 CST 2017]; root of context hierarchy
+2017-12-07 17:35:00 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-07 17:35:00 com.taobao.diamond.server.service.NotifyService.loadNodes(NotifyService.java:66)节点列表:{}
+2017-12-07 17:35:00 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/views/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2017-12-07 17:35:00 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2017-12-07 17:35:00 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/admin.do] onto handler 'adminController'
+2017-12-07 17:35:00 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/login.do] onto handler 'loginController'
+2017-12-07 17:35:00 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/notify.do] onto handler 'notifyController'
+2017-12-07 17:35:00 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/tshAdmin.do] onto handler 'tshAdminController'
+2017-12-07 17:35:00 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/tshNotify.do] onto handler 'tshNotifyController'
+2017-12-07 17:35:00 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/tshUser.do] onto handler 'tshUserController'
+2017-12-07 17:35:00 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/system.do] onto handler 'systemController'
+2017-12-07 17:35:00 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/systemMenu.do] onto handler 'systemMenuController'
+2017-12-07 17:35:00 org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325)Root WebApplicationContext: initialization completed in 737 ms
+2017-12-07 17:35:00 org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:485)FrameworkServlet 'diamond': initialization started
+2017-12-07 17:35:00 org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)Refreshing WebApplicationContext for namespace 'diamond-servlet': startup date [Thu Dec 07 17:35:00 CST 2017]; parent: Root WebApplicationContext
+2017-12-07 17:35:00 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)Loading XML bean definitions from ServletContext resource [/WEB-INF/diamond-servlet.xml]
+2017-12-07 17:35:00 org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:504)FrameworkServlet 'diamond': initialization completed in 20 ms
+2017-12-07 17:38:54 org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:285)Root WebApplicationContext: initialization started
+2017-12-07 17:38:54 org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)Refreshing Root WebApplicationContext: startup date [Thu Dec 07 17:38:54 CST 2017]; root of context hierarchy
+2017-12-07 17:38:54 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-07 17:38:55 com.taobao.diamond.server.service.NotifyService.loadNodes(NotifyService.java:66)节点列表:{}
+2017-12-07 17:38:55 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/views/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2017-12-07 17:38:55 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2017-12-07 17:38:55 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/admin.do] onto handler 'adminController'
+2017-12-07 17:38:55 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/login.do] onto handler 'loginController'
+2017-12-07 17:38:55 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/notify.do] onto handler 'notifyController'
+2017-12-07 17:38:55 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/tshAdmin.do] onto handler 'tshAdminController'
+2017-12-07 17:38:55 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/tshNotify.do] onto handler 'tshNotifyController'
+2017-12-07 17:38:55 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/tshUser.do] onto handler 'tshUserController'
+2017-12-07 17:38:55 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/system.do] onto handler 'systemController'
+2017-12-07 17:38:55 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/systemMenu.do] onto handler 'systemMenuController'
+2017-12-07 17:38:55 org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325)Root WebApplicationContext: initialization completed in 689 ms
+2017-12-07 17:38:55 org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:485)FrameworkServlet 'diamond': initialization started
+2017-12-07 17:38:55 org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)Refreshing WebApplicationContext for namespace 'diamond-servlet': startup date [Thu Dec 07 17:38:55 CST 2017]; parent: Root WebApplicationContext
+2017-12-07 17:38:55 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)Loading XML bean definitions from ServletContext resource [/WEB-INF/diamond-servlet.xml]
+2017-12-07 17:38:55 org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:504)FrameworkServlet 'diamond': initialization completed in 22 ms
+2017-12-07 17:48:35 org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:285)Root WebApplicationContext: initialization started
+2017-12-07 17:48:35 org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)Refreshing Root WebApplicationContext: startup date [Thu Dec 07 17:48:35 CST 2017]; root of context hierarchy
+2017-12-07 17:48:35 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-07 17:48:36 com.taobao.diamond.server.service.NotifyService.loadNodes(NotifyService.java:66)节点列表:{}
+2017-12-07 17:48:36 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/views/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2017-12-07 17:48:36 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2017-12-07 17:48:36 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/admin.do] onto handler 'adminController'
+2017-12-07 17:48:36 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/login.do] onto handler 'loginController'
+2017-12-07 17:48:36 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/notify.do] onto handler 'notifyController'
+2017-12-07 17:48:36 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/tshAdmin.do] onto handler 'tshAdminController'
+2017-12-07 17:48:36 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/tshNotify.do] onto handler 'tshNotifyController'
+2017-12-07 17:48:36 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/tshUser.do] onto handler 'tshUserController'
+2017-12-07 17:48:36 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/system.do] onto handler 'systemController'
+2017-12-07 17:48:36 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/systemMenu.do] onto handler 'systemMenuController'
+2017-12-07 17:48:36 org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325)Root WebApplicationContext: initialization completed in 731 ms
+2017-12-07 17:48:36 org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:485)FrameworkServlet 'diamond': initialization started
+2017-12-07 17:48:36 org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)Refreshing WebApplicationContext for namespace 'diamond-servlet': startup date [Thu Dec 07 17:48:36 CST 2017]; parent: Root WebApplicationContext
+2017-12-07 17:48:36 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)Loading XML bean definitions from ServletContext resource [/WEB-INF/diamond-servlet.xml]
+2017-12-07 17:48:36 org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:504)FrameworkServlet 'diamond': initialization completed in 19 ms
+2017-12-07 17:58:48 org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:285)Root WebApplicationContext: initialization started
+2017-12-07 17:58:48 org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)Refreshing Root WebApplicationContext: startup date [Thu Dec 07 17:58:48 CST 2017]; root of context hierarchy
+2017-12-07 17:58:48 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-07 17:58:48 com.taobao.diamond.server.service.NotifyService.loadNodes(NotifyService.java:66)节点列表:{}
+2017-12-07 17:58:49 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/views/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2017-12-07 17:58:49 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2017-12-07 17:58:49 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/admin.do] onto handler 'adminController'
+2017-12-07 17:58:49 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/login.do] onto handler 'loginController'
+2017-12-07 17:58:49 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/notify.do] onto handler 'notifyController'
+2017-12-07 17:58:49 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/tshAdmin.do] onto handler 'tshAdminController'
+2017-12-07 17:58:49 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/tshNotify.do] onto handler 'tshNotifyController'
+2017-12-07 17:58:49 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/tshUser.do] onto handler 'tshUserController'
+2017-12-07 17:58:49 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/system.do] onto handler 'systemController'
+2017-12-07 17:58:49 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/systemMenu.do] onto handler 'systemMenuController'
+2017-12-07 17:58:49 org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325)Root WebApplicationContext: initialization completed in 713 ms
+2017-12-07 17:58:49 org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:485)FrameworkServlet 'diamond': initialization started
+2017-12-07 17:58:49 org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)Refreshing WebApplicationContext for namespace 'diamond-servlet': startup date [Thu Dec 07 17:58:49 CST 2017]; parent: Root WebApplicationContext
+2017-12-07 17:58:49 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)Loading XML bean definitions from ServletContext resource [/WEB-INF/diamond-servlet.xml]
+2017-12-07 17:58:49 org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:504)FrameworkServlet 'diamond': initialization completed in 20 ms
+2017-12-07 18:17:07 org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)No mapping found for HTTP request with URI [/diamond-server/diamond.do] in DispatcherServlet with name 'diamond'
+2017-12-07 18:30:23 org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:285)Root WebApplicationContext: initialization started
+2017-12-07 18:30:23 org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)Refreshing Root WebApplicationContext: startup date [Thu Dec 07 18:30:23 CST 2017]; root of context hierarchy
+2017-12-07 18:30:23 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-07 18:30:23 com.taobao.diamond.server.service.AdminService.loadUsers(AdminService.java:58)加载user.properties文件失败
+java.io.FileNotFoundException: E:\Git%20Code\jetty-web\webank-callback\docs\使用说明\淘宝diamond部署说明\tomcat-diamond-8080\webapps\diamond-server\WEB-INF\classes\user.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:146)
+	at java.io.FileInputStream.<init>(FileInputStream.java:101)
+	at com.taobao.diamond.server.service.AdminService.loadUsers(AdminService.java:54)
+	at com.taobao.diamond.server.service.AdminService.<init>(AdminService.java:45)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:147)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:89)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1094)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1046)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByName(AbstractAutowireCapableBeanFactory.java:1240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1190)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:434)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4723)
+	at org.apache.catalina.core.StandardContext$1.call(StandardContext.java:5226)
+	at org.apache.catalina.core.StandardContext$1.call(StandardContext.java:5221)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-12-07 18:30:23 com.taobao.diamond.server.service.NotifyService.loadNodes(NotifyService.java:66)节点列表:{}
+2017-12-07 18:30:23 com.zhc.system.service.SystemService.loadSystemProperties(SystemService.java:68)加载sysconfig.properties文件失败
+java.io.FileNotFoundException: E:\Git%20Code\jetty-web\webank-callback\docs\使用说明\淘宝diamond部署说明\tomcat-diamond-8080\webapps\diamond-server\WEB-INF\classes\sysconfig.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:146)
+	at java.io.FileInputStream.<init>(FileInputStream.java:101)
+	at com.zhc.system.service.SystemService.loadSystemProperties(SystemService.java:64)
+	at com.zhc.system.service.SystemService.<init>(SystemService.java:55)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:147)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:89)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1094)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1046)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByName(AbstractAutowireCapableBeanFactory.java:1240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1190)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:434)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4723)
+	at org.apache.catalina.core.StandardContext$1.call(StandardContext.java:5226)
+	at org.apache.catalina.core.StandardContext$1.call(StandardContext.java:5221)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-12-07 18:30:23 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/views/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2017-12-07 18:30:23 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2017-12-07 18:30:23 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/admin.do] onto handler 'adminController'
+2017-12-07 18:30:23 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/login.do] onto handler 'loginController'
+2017-12-07 18:30:23 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/notify.do] onto handler 'notifyController'
+2017-12-07 18:30:23 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/tshAdmin.do] onto handler 'tshAdminController'
+2017-12-07 18:30:23 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/tshNotify.do] onto handler 'tshNotifyController'
+2017-12-07 18:30:23 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/tshUser.do] onto handler 'tshUserController'
+2017-12-07 18:30:23 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/system.do] onto handler 'systemController'
+2017-12-07 18:30:23 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/systemMenu.do] onto handler 'systemMenuController'
+2017-12-07 18:30:23 org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325)Root WebApplicationContext: initialization completed in 691 ms
+2017-12-07 18:30:23 org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:485)FrameworkServlet 'diamond': initialization started
+2017-12-07 18:30:23 org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)Refreshing WebApplicationContext for namespace 'diamond-servlet': startup date [Thu Dec 07 18:30:23 CST 2017]; parent: Root WebApplicationContext
+2017-12-07 18:30:23 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)Loading XML bean definitions from ServletContext resource [/WEB-INF/diamond-servlet.xml]
+2017-12-07 18:30:23 org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:504)FrameworkServlet 'diamond': initialization completed in 20 ms
+2017-12-07 18:31:19 org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:285)Root WebApplicationContext: initialization started
+2017-12-07 18:31:19 org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)Refreshing Root WebApplicationContext: startup date [Thu Dec 07 18:31:19 CST 2017]; root of context hierarchy
+2017-12-07 18:31:19 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-07 18:31:19 com.taobao.diamond.server.service.AdminService.loadUsers(AdminService.java:58)加载user.properties文件失败
+java.io.FileNotFoundException: E:\Git%20Code\jetty-web\webank-callback\docs\使用说明\淘宝diamond部署说明\tomcat-diamond-8080\webapps\diamond-server\WEB-INF\classes\user.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:146)
+	at java.io.FileInputStream.<init>(FileInputStream.java:101)
+	at com.taobao.diamond.server.service.AdminService.loadUsers(AdminService.java:54)
+	at com.taobao.diamond.server.service.AdminService.<init>(AdminService.java:45)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:147)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:89)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1094)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1046)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByName(AbstractAutowireCapableBeanFactory.java:1240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1190)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:434)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4723)
+	at org.apache.catalina.core.StandardContext$1.call(StandardContext.java:5226)
+	at org.apache.catalina.core.StandardContext$1.call(StandardContext.java:5221)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-12-07 18:31:19 com.taobao.diamond.server.service.NotifyService.loadNodes(NotifyService.java:66)节点列表:{}
+2017-12-07 18:31:19 com.zhc.system.service.SystemService.loadSystemProperties(SystemService.java:68)加载sysconfig.properties文件失败
+java.io.FileNotFoundException: E:\Git%20Code\jetty-web\webank-callback\docs\使用说明\淘宝diamond部署说明\tomcat-diamond-8080\webapps\diamond-server\WEB-INF\classes\sysconfig.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:146)
+	at java.io.FileInputStream.<init>(FileInputStream.java:101)
+	at com.zhc.system.service.SystemService.loadSystemProperties(SystemService.java:64)
+	at com.zhc.system.service.SystemService.<init>(SystemService.java:55)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:147)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:89)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1094)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1046)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByName(AbstractAutowireCapableBeanFactory.java:1240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1190)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:434)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4723)
+	at org.apache.catalina.core.StandardContext$1.call(StandardContext.java:5226)
+	at org.apache.catalina.core.StandardContext$1.call(StandardContext.java:5221)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-12-07 18:31:20 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/views/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2017-12-07 18:31:20 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2017-12-07 18:31:20 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/admin.do] onto handler 'adminController'
+2017-12-07 18:31:20 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/login.do] onto handler 'loginController'
+2017-12-07 18:31:20 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/notify.do] onto handler 'notifyController'
+2017-12-07 18:31:20 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/tshAdmin.do] onto handler 'tshAdminController'
+2017-12-07 18:31:20 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/tshNotify.do] onto handler 'tshNotifyController'
+2017-12-07 18:31:20 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/tshUser.do] onto handler 'tshUserController'
+2017-12-07 18:31:20 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/system.do] onto handler 'systemController'
+2017-12-07 18:31:20 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314)Mapped URL path [/systemMenu.do] onto handler 'systemMenuController'
+2017-12-07 18:31:20 org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325)Root WebApplicationContext: initialization completed in 675 ms
+2017-12-07 18:31:20 org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:485)FrameworkServlet 'diamond': initialization started
+2017-12-07 18:31:20 org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)Refreshing WebApplicationContext for namespace 'diamond-servlet': startup date [Thu Dec 07 18:31:20 CST 2017]; parent: Root WebApplicationContext
+2017-12-07 18:31:20 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)Loading XML bean definitions from ServletContext resource [/WEB-INF/diamond-servlet.xml]
+2017-12-07 18:31:20 org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:504)FrameworkServlet 'diamond': initialization completed in 20 ms

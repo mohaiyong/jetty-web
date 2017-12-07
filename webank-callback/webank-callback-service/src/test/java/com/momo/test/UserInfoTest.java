@@ -35,8 +35,9 @@ public class UserInfoTest extends SpringTestCase {
 	}
 
 	/**
-	 * http://localhost/diamond-server/config.co?dataId=mysql&group=webank_callback
+	 * http://127.0.0.1:8080/diamond-server/config.co?dataId=mysql&group=webank_callback
 	 */
+	@Ignore
 	@Test
 	public void getDiamond() {
 		String data = diamondClient.getConfig("dataSource.url");

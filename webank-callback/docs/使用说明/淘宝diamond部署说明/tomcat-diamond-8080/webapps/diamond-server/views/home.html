@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+	<meta http-equiv="Expires" content="0">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-control" content="no-cache">
+	<meta http-equiv="Cache" content="no-cache">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+	<meta name="renderer" content="webkit">
+	<title>淘实惠Diamond管理后台系统</title>
+	<link rel="stylesheet" type="text/css" href="/diamond-server/static/js/lib/easyui/themes/tsh/easyui.css" >
+	<link rel="stylesheet" type="text/css" href="/diamond-server/static/js/lib/easyui/themes/icon.css" >
+	<link rel="stylesheet" type="text/css" href="/diamond-server/static/js/lib/easyui/themes/tsh/tsh-main.css" >
+	<script type="text/javascript" src="/diamond-server/static/js/lib/jquery/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="/diamond-server/static/js/lib/easyui/jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="/diamond-server/static/js/lib/easyui/style.js"></script>
+</head>
+<body class="easyui-layout">
+	<div region="north" border="true" class="cs-north" style="height:55px;" border="false" >
+		<a   href="javascript:void(0);" id="logo" onclick="addTab('首页','home.html');"></a>
+		<div id="header-right"> <a href="javascript:;">退出</a></div>
+		
+	</div>
+	<div region="west" border="true" split="true" title="Diamond" class="cs-west"  maxWidth="180px" style="width:180px;background:#00ac9f ">
+		<div class="easyui-accordion"  border="false"  id="accordion">
+				<div title="用户管理"  >
+					<a href="javascript:void(0);" src="role/user_list.html" class="cs-navi-tab" title="用户管理" url="role/user_list.html" >用户管理</a>
+				</div>
+				<div title="配置信息管理"  >
+					<a href="javascript:void(0);" src="config/config_list.html" class="cs-navi-tab" title="配置信息管理" url="config/config_list.html" >配置信息管理</a>
+				</div>
+				<!-- <div title="设置拒绝请求"  >
+					<a href="javascript:void(0);" src="request/count.html" class="cs-navi-tab" title="设置拒绝请求" url="request/count.html" >设置拒绝请求</a>
+				</div> -->
+				<!-- <div title="系统信息管理"  >
+					<a href="javascript:void(0);" src="system/system_list.html" class="cs-navi-tab" title="系统信息管理" url="system/system_list.html" >系统信息管理</a>
+				</div>
+				<div title="系统功能管理"  >
+					<a href="javascript:void(0);" src="system/platform_menu_list.html" class="cs-navi-tab" title="平台功能管理" url="system/platform_menu_list.html" >平台功能管理</a>
+					<a href="javascript:void(0);" src="system/area_menu_list.html" class="cs-navi-tab" title="县域系统" url="system/area_menu_list.html" >县域系统</a>
+				</div>
+				<div title="系统功能开关"  >
+					<a href="javascript:void(0);" src="system/platform_list.html" class="cs-navi-tab" title="平台功能开关" url="system/platform_list.html" >平台功能开关</a>
+					<a href="javascript:void(0);" src="system/area_list.html" class="cs-navi-tab" title="县域系统" url="system/area_list.html" >县域中心</a>
+				</div> -->
+		</div>
+	</div>
+	<div id="mainPanle" region="center" border="true" border="false">
+		 <div id="tabs" class="easyui-tabs"  fit="true" border="false" >
+         	<div title="首页">
+				<div class="cs-home-remark" style="margin:10px; font-size:18px;">
+					欢迎进入淘实惠供应商管理系统!
+				</div>
+			</div>
+        </div>
+	</div>
+
+	<!-- <div region="south" border="false" id="south"><center>深圳市动态电商</center></div> -->
+	
+	<div id="mm" class="easyui-menu cs-tab-menu">
+		<div id="mm-tabupdate">刷新</div>
+		<div class="menu-sep"></div>
+		<div id="mm-tabclose">关闭</div>
+		<div id="mm-tabcloseother">关闭其他</div>
+		<div id="mm-tabcloseall">关闭全部</div>
+	</div>
+</body>
+<script type="text/javascript">
+$(function(){
+	var logout = function(){
+		var url = '/diamond-server/tshAdmin.do?method=logout';
+		$.ajax({
+            //dataType:'json',
+            url:url,
+            type:'get',
+            //jsonp:'callback',
+            async:false,
+            success:function(data) {
+            	window.location.href='/diamond-server/';
+             },
+             error: function(err) {
+            	 $(".error-text").html("登录失败");
+             }
+        });
+        return false;
+    }
+	var initUI = function(){
+		$('#header-right').delegate('a','click',logout);
+	}
+	initUI();
+});
+</script>
+<!--<script type="text/javascript">
+	$(function(){
+		var height=$(window).height();
+		var heightNew=height-41;
+		$(".easyui-layout").height(heightNew);
+	})
+</script>-->
+</html>

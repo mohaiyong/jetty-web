@@ -1,0 +1,72 @@
+.cs-north-logo{ font-size: 14px;}
+
+a#logo {
+background: url(images/logo.png) no-repeat center right;
+height:53px;
+display: block;
+width: 335px;
+margin-left: 19px;
+}
+
+#header-right{ position:absolute; right: 10px;  height: 20px; line-height: 20px; top: 26px;}
+
+.panel-body{font-size: 14px; font-family: "微软雅黑"}
+a,a:hover {
+color: #333;
+text-decoration: none;
+}
+
+
+.easyui-accordion{ margin-top: 10px;background:#00ac9f url(images/menubg.png) right}
+.easyui-accordion a.cs-navi-tab{color: #fff;display: block;  line-height: 30px; margin: 5px 0 }
+.easyui-accordion .panel-body{background:#00ac9f url(images/menubg.png) right; text-align: center;border-color: #00ac9f;}
+.accordion .accordion-header{background: #00bdad url(images/menubg.png) right;border-color: #00ac9f; height: 30px;border-width: 0 0 2px;}
+.accordion .accordion-header .panel-title{ color: #fff; line-height: 30px; font-size: 14px;}
+.accordion .accordion-header-selected{ background: #00bdad url(images/menubg.png) right;
+}
+
+
+.easyui-accordion a.cs-navi-tab.current{background: url(images/menu.png) no-repeat  right; width: 100%; color: #333; }
+.accordion-collapse{background: url('images/main/accordion_arrows.png') no-repeat 0px 0;}
+.accordion-collapse.accordion-expand{background: url('images/main/accordion_arrows.png') no-repeat -16px 0 ;}
+
+#tabs .panel-body{}
+.layout-panel-north .panel-header,.layout-panel-north .panel-body{border-width:0 }
+#tabs .tabs-header{border-width: 0;background-color:#fff;}
+#mainPanle{border-width:0}
+#mainPanle  .tabs-header{border-width:0 }
+
+.tabs-scroller-left,.tabs-scroller-right{ background-color: #fff; border-width: 0 0 1px 0}
+.panel-title{text-align: center;}
+.easyui-accordion .panel-tool a:hover{background-color: #00ac9f}
+
+.layout-split-west{border-right:0px;}
+.layout-panel-west >.panel-header{background: #fff;border: 0;padding: 6px; font-size: 16px;}
+.layout-panel-west >.panel-header .panel-title{ font-size: 14px;}
+
+/* 滚动条 */
+::-webkit-scrollbar{ height:7px; width:10px;}
+::-webkit-scrollbar-thumb{
+  min-height:30px;
+  background: rgba(152,152,152,1);
+  border-radius: 100px;
+  box-shadow: 0 0 1px 1px rgba(255,255,255,0.25);
+}
+/*::-webkit-scrollbar-thumb:hover{ background: rgba(152,152,152,.7); }
+::-webkit-scrollbar-thumb:active{  background: rgba(152,152,152,.8);  }*/
+
+/*::-webkit-scrollbar-track:vertical { 
+  background:-webkit-gradient(linear, 0 0, 100% 0, from(rgba(0,0,0,.13)), to(rgba(0,0,0,.13)), color-stop(.5,rgba(0, 0, 0, .05)));
+}*/
+
+::-webkit-scrollbar-track:vertical { 
+  background:rgba(207,207,207,.8);
+}
+
+::-webkit-scrollbar-track:horizontal{ 
+  background:-webkit-gradient(linear, 0 0, 0 100%, from(rgba(0,0,0,.13)), to(rgba(0,0,0,.13)), color-stop(.5,rgba(0, 0, 0, .05)));
+}
+
+::-webkit-scrollbar-corner{ background:#e7e7e7;}
+
+#tabs .panel-body{ background: #f2f2f2; overflow: hidden;}

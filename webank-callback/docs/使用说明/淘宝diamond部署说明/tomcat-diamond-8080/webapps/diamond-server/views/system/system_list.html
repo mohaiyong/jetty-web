@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>系统信息管理</title>
+<!-- 		<link rel="stylesheet" type="text/css" href="../../static/css/easyui.css" > -->
+		<link rel="stylesheet" type="text/css" href="../../static/js/lib/easyui/themes/icon.css" >
+		<link rel="stylesheet" type="text/css" href="../../static/js/lib/easyui/themes/tsh/easyui.css" >
+		<link rel="stylesheet" type="text/css" href="../../static/js/lib/easyui/themes/tsh/bootstrap.min.css" >
+		<link rel="stylesheet" type="text/css" href="../../static/js/lib/easyui/themes/tsh/tsh-main.css" >
+		<link rel="stylesheet" type="text/css" href="../../static/js/lib/easyui/themes/tsh/tsh-common.css" >
+		<script type="text/javascript" src="../../static/js/lib/jquery/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="../../static/js/lib/easyui/jquery.easyui.min.js"></script>
+		<script type="text/javascript" src="../../static/js/lib/easyui/locale/easyui-lang-zh_CN.js"></script>
+		<script type="text/javascript" src="../../static/js/lib/easyui/style.js"></script>
+		<script src="../../static/js/plugin/acceptParam/acceptParam.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../static/js/system/system_list.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.datagrid-header-row{
+				height: 35px;
+			}
+			.div_span {
+				padding-left:40px;
+			}
+			#system-dialog{padding:10px;}
+			.form-group{margin-bottom:15px;clear:left;display:block;}
+			.form-group label{float:left;padding:0 10px;line-height: 34px;}
+			.form-group input.form-control{max-width: 300px;float: left;}
+			.form-group input.value{max-width:300px;}
+			.addGroupItem{text-align:center;}
+			#user-dialog{padding:10px 10px;}
+			.form-group-content{height: 300px;width:620px;overflow-y:auto;margin-bottom: 10px;}
+		</style>
+	</head>
+	<body>
+		
+		
+<table id="dataGrid"></table>
+	<div id="tb" style="padding: 2px 5px;">
+	<form name="form" id="form">
+		<div style="margin-top: 10px; margin-bottom: 10px;">
+			<a href="#" class="easyui-linkbutton btn-red" iconCls="icon-add" id="addSystem">添加系统</a>
+		</div>
+		</form>
+	</div>
+	</body>
+
+</html>
+<script type='text/html' id='system-dialog-template'>
+<div id='system-dialog'>
+<div class="form-group">
+	<label for='group'>系统编号:</label>
+	<input class="form-control value" id='sysCode' name='sysCode' maxlength="50" type="text" placeholder="系统编号（50个字符长度）" >
+</div>
+<div class="form-group">
+	<label for='group'>系统名称:</label>
+	<input class="form-control value" id='sysName' name='sysName' maxlength="100" type="text" placeholder="系统名称（100个字符长度）" >
+</div>
+<div class="form-group">
+	<label for='group'>系统域名:</label>
+	<input class="form-control value" id='domain' name='domain' maxlength="100" type="text" placeholder="系统首页地址 （100个字符长度）" >
+</div>
+<div class="form-group" id='sysType-content'>
+	<label for='group'>系统类别:</label>
+	<select id='sysType' style="width:300px;height: 30px;" class="easyui-combobox"  panelHeight="auto"><option value='0'>平台系统</option><option value='1'>县域系统</option></select>
+</div>
+</div>
+</script>
+<script type='text/html' id='userpassword-dialog-template'>
+<div id='user-dialog'>
+<div class="form-group">
+	<label for='group'>请输入新密码:</label>
+	<input class="form-control value" id='password' name='password' maxlength="20" type="text" placeholder="请输入新密码（20个字符长度）" >
+</div>
+</div>
+</script>

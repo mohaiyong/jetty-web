@@ -37,10 +37,12 @@ public class UserInfoTest extends SpringTestCase {
 	/**
 	 * http://127.0.0.1:8080/diamond-server/config.co?dataId=mysql&group=webank_callback
 	 */
-	@Ignore
 	@Test
-	public void getDiamond() {
+	public void getDiamond() throws InterruptedException {
 		String data = diamondClient.getConfig("dataSource.url");
+		System.out.println(data);
+		Thread.sleep(10000L);
+		data = diamondClient.getConfig("dataSource.url");
 		System.out.println(data);
 	}
 }

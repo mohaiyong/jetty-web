@@ -1,6 +1,9 @@
 使用说明
 
 1.先启动diamond项目
+10.160.41.69 a.b.c
+10.160.40.202 d.e.f
+
 
 2.配置动态配置：
 【dataId=mysql  group=webank_callback】

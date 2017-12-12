@@ -13,10 +13,10 @@
 	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
 
 	<!-- 加载动态配置方式1 -->
-	<bean id="diamondClient" class="com.momo.diamond.DiamondClient" init-method="init"/>
+	<!-- <bean id="diamondClient" class="com.momo.diamond.DiamondClient" init-method="init"/> --> 
 	
     <!-- 加载动态配置方式2：-->
-    <!-- <context:property-placeholder location="classpath*:/config/*.properties"/> --> 
+    <context:property-placeholder location="classpath*:/config/*.properties"/>
 	
 	<!-- 配置扫描的包 -->
 	<context:component-scan base-package="com.momo.service" />
@@ -34,5 +34,6 @@
 	<import resource="classpath*:/spring/applicationContext-transaction.xml" />
 	<import resource="classpath*:/spring/applicationContext-email.xml" />
 	<import resource="classpath*:/spring/applicationContext-dubbo-*.xml" />
+	<import resource="classpath*:/spring/applicationContext-redis-bis.xml" />
 	
 </beans>

@@ -39,6 +39,11 @@
 			<artifactId>webank-callback-util</artifactId>
 			<version>1.0.0</version>
 		</dependency>
+  		<dependency>
+			<groupId>com.momo</groupId>
+			<artifactId>webank-callback-redis</artifactId>
+			<version>1.0.0</version>
+		</dependency>
 		
 		
 		

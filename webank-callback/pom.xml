@@ -14,6 +14,7 @@
 		<module>webank-callback-util</module>
 		<module>webank-callback-jetty</module><!-- jetty启动 -->
 		<module>webank-callback-redis</module><!-- redis集成 -->
+		<module>webank-callback-scheduler</module><!-- scheduler集成 -->
 	</modules>
 
 

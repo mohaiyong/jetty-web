@@ -20,6 +20,9 @@
         <dependent-module archiveName="webank-callback-dao-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/webank-callback-dao/webank-callback-dao">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="webank-callback-redis-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/webank-callback-redis/webank-callback-redis">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="springmvc02"/>
         <property name="java-output-path" value="/springmvc02/target/classes"/>
     </wb-module>

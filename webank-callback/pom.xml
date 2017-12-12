@@ -7,12 +7,13 @@
 	<packaging>pom</packaging>
 
 	<modules>
-		<module>webank-callback-api</module>
-		<module>webank-callback-web</module>
-		<module>webank-callback-jetty</module>
+		<module>webank-callback-web</module><!-- web管理 -->
+		<module>webank-callback-api</module><!-- dubbo提供api -->
+		<module>webank-callback-service</module><!-- dubbo实现+所有业务层 -->
+		<module>webank-callback-dao</module><!-- 底层dao -->
 		<module>webank-callback-util</module>
-		<module>webank-callback-service</module>
-		<module>webank-callback-dao</module>
+		<module>webank-callback-jetty</module><!-- jetty启动 -->
+		<module>webank-callback-redis</module><!-- redis集成 -->
 	</modules>
 
 

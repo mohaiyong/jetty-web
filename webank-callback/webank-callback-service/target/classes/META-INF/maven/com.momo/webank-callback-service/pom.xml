@@ -10,7 +10,6 @@
   
   <properties>
   		<argLine>-Dfile.encoding=UTF-8</argLine>
-		<fastjson.version>1.2.5</fastjson.version>
 		<!-- <dubbo.version>2.5.3</dubbo.version> -->
 		<dubbo.version>2.5.4-SNAPSHOT</dubbo.version>
 		<zookeeper.version>3.4.6</zookeeper.version>
@@ -65,12 +64,7 @@
 			<artifactId>zkclient</artifactId>
 			<version>0.1</version>
 		</dependency>
-		<!-- Fastjson依赖 -->
-		<dependency>
-			<groupId>com.alibaba</groupId>
-			<artifactId>fastjson</artifactId>
-			<version>${fastjson.version}</version>
-		</dependency>
+
 		
 		
 

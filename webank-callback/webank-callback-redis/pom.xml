@@ -7,108 +7,44 @@
 		<version>1.0.0</version>
 	</parent>
 	<artifactId>webank-callback-redis</artifactId>
-	
 	<build>
 		<finalName>webank-callback-redis</finalName>
 	</build>
 	
-	  <!-- 定义属性 -->
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	<spring.version>4.1.6.RELEASE</spring.version>
-	<spring.security.version>4.0.4.RELEASE</spring.security.version>
-	<spring.security.oauth.version>2.0.7.RELEASE</spring.security.oauth.version>
-	<fasterxml.jackson.version>2.5.4</fasterxml.jackson.version>
-	<aspectj.version>1.8.6</aspectj.version>  
-  </properties>
   
 	<dependencies>
-	
+		<!-- 引入工具类 -->
 	  	<dependency>
 			<groupId>com.momo</groupId>
 			<artifactId>webank-callback-util</artifactId>
 			<version>1.0.0</version>
 		</dependency>
-	
-	
-	
-  	<!-- 引入谷歌集合库 -->
-  	<dependency>
-	   <groupId>com.google.collections</groupId>
-	   <artifactId>google-collections</artifactId>
-	   <version>1.0</version>
-	</dependency>
-  	<dependency>
-	    <groupId>org.apache.commons</groupId>
-	    <artifactId>commons-lang3</artifactId>
-	    <version>3.2.1</version>
-	</dependency>
-	<!-- 单元测试 -->
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.12</version>
-      <scope>test</scope>
-    </dependency>
-    <!-- Jedis -->
-    <dependency>
-	  <groupId>redis.clients</groupId>
-	  <artifactId>jedis</artifactId>
-	  <version>2.9.0</version>
-   </dependency> 
-   <!-- spring --> 
-   <dependency>  
-      <groupId>org.springframework</groupId>  
-      <artifactId>spring-core</artifactId>  
-      <version>${spring.version}</version>  
-    </dependency>  
-        <dependency>  
-        <groupId>org.springframework</groupId>  
-        <artifactId>spring-beans</artifactId>  
-        <version>${spring.version}</version>  
-    </dependency> 
-        <dependency>  
-        <groupId>org.springframework</groupId>  
-        <artifactId>spring-context</artifactId>  
-        <version>${spring.version}</version>  
-    </dependency> 
-    <!-- log4j -->
-    <dependency>
-	   <groupId>org.slf4j</groupId>
-	   <artifactId>slf4j-log4j12</artifactId>
-	   <version>1.7.5</version>
-	   <scope>compile</scope>
-   </dependency> 
-   <dependency>
-	  <groupId>log4j</groupId>
-	  <artifactId>log4j</artifactId>
-	  <version>1.2.14</version>
-	  <scope>compile</scope>
-  </dependency>         
-  <dependency>
-	  <groupId>commons-logging</groupId>
-	  <artifactId>commons-logging</artifactId>
-	  <version>1.2</version>
-  </dependency>  
-	  
-	  
-	  
-	  <!-- 方式2  bis集成spring的redis -->
+		
+		<!-- 单元测试 -->
+		<dependency>
+		     <groupId>junit</groupId>
+		     <artifactId>junit</artifactId>
+		     <version>4.12</version>
+		     <scope>test</scope>
+		</dependency>
+		<!-- Jedis -->
+		<dependency>
+		  <groupId>redis.clients</groupId>
+		  <artifactId>jedis</artifactId>
+		  <version>2.9.0</version>
+		</dependency> 
+	    <!-- 方式2  bis集成spring的redis -->
 	  	<dependency>
 			<groupId>org.springframework.data</groupId>
 			<artifactId>spring-data-redis</artifactId>
 			<version>1.6.4.RELEASE</version>
 		</dependency>
-		
-		
-			<!-- TestRunnable压力测试 -->
-			<dependency>
-	            <groupId>net.sourceforge.groboutils</groupId>
-	            <artifactId>groboutils-core</artifactId>
-	            <version>5</version>
-	        </dependency>
- 
-  
+		<!-- TestRunnable压力测试 -->
+		<dependency>
+            <groupId>net.sourceforge.groboutils</groupId>
+            <artifactId>groboutils-core</artifactId>
+            <version>5</version>
+        </dependency>
 	</dependencies>
 
 </project>

@@ -17,13 +17,7 @@
   </properties>
   
   <dependencies>
-  		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.12</version>
-			<scope>test</scope>
-		</dependency>
-  	
+		<!-- 引入本项目jar -->  	
   		<dependency>
 			<groupId>com.momo</groupId>
 			<artifactId>webank-callback-api</artifactId>
@@ -44,9 +38,6 @@
 			<artifactId>webank-callback-redis</artifactId>
 			<version>1.0.0</version>
 		</dependency>
-		
-		
-		
 		<!-- dubbo配置 -->
 		<dependency>
 			<groupId>com.alibaba</groupId>
@@ -69,12 +60,13 @@
 			<artifactId>zkclient</artifactId>
 			<version>0.1</version>
 		</dependency>
-
-		
-		
-
-
-		
+		<!-- 引入Test -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
   </dependencies>
   
   

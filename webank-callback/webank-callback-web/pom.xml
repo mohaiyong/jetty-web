@@ -56,7 +56,6 @@
 			<artifactId>jackson-databind</artifactId>
 			<version>${jackson.version}</version>
 		</dependency>
-		
         <!-- AOP注解
         <dependency>
             <groupId>org.aspectj</groupId>
@@ -74,8 +73,6 @@
             <version>3.1</version>
         </dependency>
          -->
-
-		
   </dependencies>
   
   

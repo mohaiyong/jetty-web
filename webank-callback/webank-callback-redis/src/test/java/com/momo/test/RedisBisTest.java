@@ -9,6 +9,7 @@ import net.sourceforge.groboutils.junit.v1.MultiThreadedTestRunner;
 import net.sourceforge.groboutils.junit.v1.TestRunnable;
 
 import org.apache.log4j.Logger;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
@@ -38,6 +39,7 @@ public class RedisBisTest {
 	/**
 	 * 模拟并发10000请求，有十几个是没拿到锁返回人员太多重新发起请求的
 	 */
+	@Ignore
 	@Test
 	public void testLotteryDraw() {
 		//1.定义测试并发内部类

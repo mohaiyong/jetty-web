@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import com.alibaba.fastjson.JSON;
@@ -22,6 +23,7 @@ public class TestUserInfo extends SpringTestCase {
 	@Resource
 	private UserInfoService userInfoService;
 
+	@Ignore
 	@Test
 	public void getUserPageList() {
 		List<UserInfo> userInfoList = userInfoService.getUserPageList(new UserInfo(), 1, Integer.MAX_VALUE);

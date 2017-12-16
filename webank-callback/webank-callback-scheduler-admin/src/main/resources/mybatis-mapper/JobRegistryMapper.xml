@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.spring.scheduler.admin.dao.JobRegistryDao">
+	
+	<resultMap id="JobRegistry" type="com.spring.scheduler.admin.core.model.JobRegistry" >
+		<result column="id" property="id" />
+	    <result column="registry_group" property="registryGroup" />
+	    <result column="registry_key" property="registryKey" />
+	    <result column="registry_value" property="registryValue" />
+		<result column="executor_client" property="executorClient" />
+	    <result column="client_name" property="clientName" />
+	    <result column="if_grant" property="ifGrant" />
+	    <result column="aes_key" property="aesKey" />
+		<result column="access_token" property="accessToken" />
+		<result column="crt_time" property="crtTime" />
+		<result column="update_time" property="updateTime" />
+	</resultMap>
+
+	<sql id="Base_Column_List">
+		t.id,
+		t.registry_group,
+		t.registry_key,
+		t.registry_value,
+		t.executor_client,
+		t.client_name,
+		t.if_grant,
+		t.aes_key,
+		t.access_token,
+		t.crt_time,
+		t.update_time
+	</sql>
+	
+	<delete id="removeDead" parameterType="java.lang.Integer" >
+		DELETE FROM JOB_QRTZ_TRIGGER_REGISTRY
+		WHERE update_time <![CDATA[ < ]]> DATE_ADD(NOW(),INTERVAL -#{timeout} SECOND)
+	</delete>
+
+	<select id="findAll" parameterType="java.lang.Integer" resultMap="JobRegistry">
+		SELECT <include refid="Base_Column_List" />
+		FROM JOB_QRTZ_TRIGGER_REGISTRY AS t
+		WHERE t.update_time <![CDATA[ > ]]> DATE_ADD(NOW(),INTERVAL -#{timeout} SECOND)
+	</select>
+	
+	<select id="findAllRegist" resultMap="JobRegistry">
+		SELECT <include refid="Base_Column_List" />
+		FROM JOB_QRTZ_TRIGGER_REGISTRY AS t
+	</select>
+	
+	<select id="findByRegistkey" resultMap="JobRegistry">
+		SELECT <include refid="Base_Column_List" />
+		FROM JOB_QRTZ_TRIGGER_REGISTRY AS t
+		WHERE t.registry_key=#{registryKey}
+	</select>
+	
+	<select id="findById" parameterType="java.lang.Integer" resultMap="JobRegistry">
+		SELECT <include refid="Base_Column_List" />
+		FROM JOB_QRTZ_TRIGGER_REGISTRY AS t
+		WHERE t.id=#{id}
+	</select>
+
+	<update id="addSecretKey">
+		UPDATE JOB_QRTZ_TRIGGER_REGISTRY
+        SET `AES_KEY` = #{aesKey},`ACCESS_TOKEN` = #{accessToken}
+        WHERE `id` = #{id}
+	</update>
+
+    <update id="registryUpdate" >
+        UPDATE JOB_QRTZ_TRIGGER_REGISTRY
+        SET `update_time` = NOW()
+        WHERE `registry_group` = #{registryGroup}
+          AND `executor_client` = #{executorClient}
+          AND `registry_value` = #{registryValue}
+    </update>
+    
+    <update id="updateRegistGrant">
+    	UPDATE JOB_QRTZ_TRIGGER_REGISTRY
+        SET `IF_GRANT` = #{ifGrant}
+        WHERE `id` = #{id}
+    </update>
+    
+    <insert id="registrySave" >
+        INSERT INTO JOB_QRTZ_TRIGGER_REGISTRY( `registry_group` , `registry_key` , `registry_value`, `executor_client`, `client_name`, `update_time`)
+        VALUES( #{registryGroup}  , #{registryKey} , #{registryValue}, #{executorClient}, #{clientName}, NOW())
+    </insert>
+	
+	<select id="pageList" parameterType="java.util.HashMap" resultMap="JobRegistry">
+		SELECT <include refid="Base_Column_List" />
+		FROM JOB_QRTZ_TRIGGER_REGISTRY AS t
+		<trim prefix="WHERE" prefixOverrides="AND | OR" >
+			<if test="executorClient != null and executorClient != ''">
+				AND t.executor_client like CONCAT(CONCAT('%', #{executorClient}), '%')
+			</if>
+			<if test="clientName != null and clientName != ''">
+				AND t.clientName like CONCAT(CONCAT('%', #{clientName}), '%')
+			</if>
+		</trim>
+		ORDER BY id DESC
+		LIMIT #{offset}, #{pagesize}
+	</select>
+	
+	<select id="pageListCount" parameterType="java.util.HashMap" resultType="int">
+		SELECT count(1)
+		FROM JOB_QRTZ_TRIGGER_REGISTRY AS t
+		<trim prefix="WHERE" prefixOverrides="AND | OR" >
+			<if test="executorClient != null and executorClient != ''">
+				AND t.executor_client like CONCAT(CONCAT('%', #{executorClient}), '%')
+			</if>
+			<if test="clientName != null and clientName != ''">
+				AND t.clientName like CONCAT(CONCAT('%', #{clientName}), '%')
+			</if>
+		</trim>
+	</select>
+</mapper>

@@ -2,6 +2,7 @@ package com.momo.test;
 
 import javax.annotation.Resource;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import com.alibaba.fastjson.JSONObject;
@@ -20,6 +21,7 @@ public class TestRedis extends SpringTestCase {
 	@Resource
 	private BisRedisSlave bisRedisSlave;
 
+	@Ignore
 	@Test
 	public void getUserPageList() {
 		UserInfo userInfo = new UserInfo();

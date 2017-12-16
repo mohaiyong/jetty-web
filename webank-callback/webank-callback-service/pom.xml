@@ -38,6 +38,15 @@
 			<artifactId>webank-callback-redis</artifactId>
 			<version>1.0.0</version>
 		</dependency>
+		<!-- 基于xxl-job封装的定时任务 -->
+		<dependency>
+			<groupId>com.momo</groupId>
+			<artifactId>webank-callback-scheduler</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		
+		
+		
 		<!-- dubbo配置 -->
 		<dependency>
 			<groupId>com.alibaba</groupId>

@@ -14,7 +14,8 @@
 		<module>webank-callback-util</module>
 		<module>webank-callback-jetty</module><!-- jetty启动 -->
 		<module>webank-callback-redis</module><!-- redis集成 -->
-		<module>webank-callback-scheduler</module><!-- scheduler集成 -->
+		<module>webank-callback-scheduler</module><!-- scheduler集成：xxl-job核心jar -->
+		<module>webank-callback-scheduler-admin</module><!-- scheduler集成: xxl-job-admin管理平台-->
 	</modules>
 
 

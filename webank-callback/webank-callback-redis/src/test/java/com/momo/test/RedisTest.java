@@ -2,6 +2,7 @@ package com.momo.test;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 
@@ -20,6 +21,7 @@ public class RedisTest {
 		System.err.println(RedisSlave.get("test111111"));
 	}
 
+	@Ignore
 	@Test
 	public void test() {
 		init();

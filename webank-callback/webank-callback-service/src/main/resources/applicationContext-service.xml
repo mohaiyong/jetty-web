@@ -35,5 +35,6 @@
 	<import resource="classpath*:/spring/applicationContext-email.xml" />
 	<import resource="classpath*:/spring/applicationContext-dubbo-*.xml" />
 	<import resource="classpath*:/spring/applicationContext-redis-bis.xml" />
+	<import resource="classpath*:/spring/applicationContext-scheduler.xml" />
 	
 </beans>

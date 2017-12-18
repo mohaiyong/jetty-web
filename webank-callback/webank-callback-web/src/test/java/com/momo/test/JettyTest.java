@@ -18,7 +18,7 @@ public class JettyTest {
 	public static void main(String[] args) throws Exception {
 		//System.setProperty("DTPROJECTNO", "demo");
 		//System.setProperty("DTENV", "dev");
-		JettyServer.start(8080);
+		JettyServer.start(80);
 	}
 
 }

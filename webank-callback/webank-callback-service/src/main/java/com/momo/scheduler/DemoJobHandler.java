@@ -6,7 +6,6 @@ import com.spring.scheduler.core.biz.model.ReturnT;
 import com.spring.scheduler.core.handler.IJobHandler;
 import com.spring.scheduler.core.handler.annotation.JobHander;
 
-
 /**
  * 任务Handler的一个Demo（Bean模式）
  * 
@@ -18,17 +17,15 @@ import com.spring.scheduler.core.handler.annotation.JobHander;
  * 
  * @author xuxueli 2015-12-19 19:43:36
  */
-@JobHander(value="jobHandlerDemo")
+@JobHander(value = "jobHandlerDemo")
 @Component
 public class DemoJobHandler extends IJobHandler {
 
 	@Override
 	public ReturnT<String> execute(String... params) throws Exception {
-		for (int i = 0; i < 5; i++) {
-			System.err.println("demo任务调用成功");
-		}
+		System.err.println("=======================>demo任务调用成功");
 		ReturnT<String> rt = new ReturnT<String>(ReturnT.SUCCESS_CODE, "demo任务调用成功");
 		return rt;
 	}
-	
+
 }

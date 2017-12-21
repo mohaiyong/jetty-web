@@ -3,6 +3,8 @@ package com.momo.test;
 /** 
  * xxl-job
  * 
+ * https://gitee.com/JornTang
+ * 
  * http://blog.csdn.net/u013294278/article/details/77414887
  * https://gitee.com/JornTang 
  * http://www.xuxueli.com/xxl-job/#/

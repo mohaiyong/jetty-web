@@ -135,7 +135,36 @@
   </dependencies>
   
   
+  
+  
+  
   <build>
     <finalName>webank-callback-util</finalName>
+    
+    
+    
+    <!-- 打包成可以jar -jar xxx.jar执行的jar文件：https://www.cnblogs.com/justinzhang/p/4975727.html -->
+	<pluginManagement>
+		<plugins>
+			<plugin>
+			    <groupId>org.apache.maven.plugins</groupId>
+			    <artifactId>maven-jar-plugin</artifactId>
+			    <configuration>
+			        <source>1.8</source>
+			        <target>1.8</target>
+			        <archive>
+			            <manifest>
+			                <mainClass>com.momo.util.common.ShortUrlUtil</mainClass>
+			                <addClasspath>true</addClasspath>
+			            <classpathPrefix>lib/</classpathPrefix>
+			            </manifest>
+			
+			        </archive>
+			        <classesDirectory>
+			        </classesDirectory>
+			    </configuration>
+			</plugin>
+		</plugins>    
+	</pluginManagement>
   </build>
 </project>
